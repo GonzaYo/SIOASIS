@@ -3,18 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
-        <title>Controlde acceso</title>
+        <title>SIOASIS - Control de acceso</title>
+        <link rel="stylesheet" type="text/ccs" href="Styles.css"/>
     </h:head>
     <h:body>
         <h2><center> Sistema de infomración automatizado Oasis</center></h2>
+        <h1><a href="http://www.socialoasis.org" id="logo"></a></h1>
         <center>
-            <h:form>
+            <div id="contenido">                
+                <header>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="presentacion.xhtml">Inicio</a></li>
+                            <li><a href="galeria.xhtml">Galeria</a></li>
+                            <li><a href="proyectos.xhtml">Proyectos</a></li>                    
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </center>
+        <br/><br/><br/>
+        <center>
+            <h:form>                
                 <div style="width: 900px; height: 150px">
-                Login: <h:inputText id="login" size="30" required="true" requiredMessage="Proporcione su nombre" value="#{accesControler.login}"/>
-                Password: <h:inputSecret id="key" size="30" required="true" requiredMessage="Proporcione su password" value="#{accesControler.key}"/>
-                <h:commandButton value="Enviar" action="#{accesControler.validar}"></h:commandButton>
+                    Login: <h:inputText id="login" size="30" required="true" requiredMessage="Proporcione su nombre" value="#{accesControler.login}"/>
+                    <br/>
+                    Password:<h:inputSecret id="key" size="30" required="true" requiredMessage="Proporcione su password" value="#{accesControler.key}"/>
+                    <br/>
+                    <h:commandButton value="Enviar" action="#{accesControler.validar}"></h:commandButton>
                 </div>
             </h:form>
+
         </center>
     </h:body>
 </html>
