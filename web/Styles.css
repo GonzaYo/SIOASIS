@@ -16,8 +16,8 @@ a{
 }
 #logo {
     display:block; 
-    background-image: url(../images/logo.jpg) 0 0 no-repeat;
-    width:276px;
+    background-image: url(images/logo.jpg);
+    width:120px;
     height:94px;
     text-indent:-9999px
 }
@@ -31,6 +31,9 @@ a{
     height:100%
 }
 #gallery li {}
+#page{
+    background-image: url(images/10e.jpg);
+}
 
 .roundabout-holder  {
     height:5em;
