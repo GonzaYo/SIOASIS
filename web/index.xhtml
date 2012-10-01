@@ -6,17 +6,17 @@
         <title>SIOASIS - Control de acceso</title>
         <link rel="stylesheet" type="text/ccs" href="Styles.css"/>
     </h:head>
-    <h:body>
-        <h2><center> Sistema de infomración automatizado Oasis</center></h2>
+    <body background-image="images/10e.jpg">        
         <h1><a href="http://www.socialoasis.org" id="logo"></a></h1>
         <center>
             <div id="contenido">                
                 <header>
                     <nav>
                         <ul id="menu">
-                            <li><a href="presentacion.xhtml">Inicio</a></li>
-                            <li><a href="galeria.xhtml">Galeria</a></li>
-                            <li><a href="proyectos.xhtml">Proyectos</a></li>                    
+                            <li><a href="presentation.xhtml">Inicio</a></li>
+                            <li><a href="volunteers.xhtml">Voluntarios</a></li>
+                            <li><a href="projects.xhtml">Proyectos</a></li>                    
+                            <li><a href="findPeople.xhtml">Buscar inscritos</a></li>                    
                         </ul>
                     </nav>
                 </header>
@@ -30,11 +30,20 @@
                     <br/>
                     Password:<h:inputSecret id="key" size="30" required="true" requiredMessage="Proporcione su password" value="#{accesControler.key}"/>
                     <br/>
-                    <h:commandButton value="Enviar" action="#{accesControler.validar}"></h:commandButton>
+                    <h:commandButton value="Enviar" action="#{accesControler.validate}"></h:commandButton>
                 </div>
             </h:form>
-
         </center>
-    </h:body>
+        
+        <!--<div id="gallery">
+            <ul id="myRoundabout">
+                <li><img src="images/casavalores.jpg" alt=""/></li>
+                <li><img src="images/comedores.jpg" alt=""/></li>
+                <li><img src="images/finca.jpg" alt=""/></li>
+                <li><img src="images/plan.jpg" alt=""/></li>                
+            </ul>
+        </div> -->
+                
+    </body>
 </html>
 

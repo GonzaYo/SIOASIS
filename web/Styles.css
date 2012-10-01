@@ -3,7 +3,6 @@
     font-family: arial;
     font-size: 18px;
 }
-
 #menu li{
     display: inline;
     padding: 2px;    
@@ -12,10 +11,37 @@ a{
     text-decoration: none;
     color: #509bfc;
 }
-
 #menu li:hover{
     border-bottom: #509bfc solid 2px;    
 }
+#logo {
+    display:block; 
+    background-image: url(../images/logo.jpg) 0 0 no-repeat;
+    width:276px;
+    height:94px;
+    text-indent:-9999px
+}
+#gallery {
+    position:relative;
+    height:520px
+}
+#gallery img {
+    display:block;
+    width:100%;
+    height:100%
+}
+#gallery li {}
 
-#logo {display:block;background:greenyellow ;width:276px;height:94px;text-indent:-9999px}
-
+.roundabout-holder  {
+    height:5em;
+}
+.roundabout-moveable-item {
+    cursor:pointer;
+    width:636px;
+    height:478px;
+    margin-top:229px;
+    padding-bottom:20px
+}
+.roundabout-in-focus {
+    cursor:auto;
+}

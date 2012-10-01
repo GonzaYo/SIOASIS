@@ -29,10 +29,10 @@ public class AccesControler {
         this.login = login;
     }
 
-    public String validar() {
+    public String validate() {
         String flag = "error";
         if (this.login.equalsIgnoreCase("Ian") && this.key.equalsIgnoreCase("12345")) {
-            flag = "bienvenido";
+            flag = "wellcome";
         }
         return flag;
     }
